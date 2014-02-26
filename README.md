@@ -5,7 +5,7 @@ Radiotech
 
 python-2.7.6
 
-matplotlib-1.3.1.win32-py2.7
+matplotlib-1.3.1.win32-py2.7\n
 numpy-1.8.0-win32-superpack-python2.7
 pyparsing-2.0.1.win32-py2.7
 python-dateutil-2.2.win32-py2.7
