@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+import pylab #Для графиков
 import math  #Для sin(), cos()
 from numpy import * #Для функции arange(), функция поддерживает тип float для аргументов
 
