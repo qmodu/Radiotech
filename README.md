@@ -10,7 +10,7 @@ List of labs:
 
 Requirements
 ------------
-To correct work you have to download Matplotlib (http://matplotlib.org/) and Numpy (http://www.numpy.org/) libraries. Instructions are following:
+To assume the correct work you have to download Matplotlib (http://matplotlib.org/) and Numpy (http://www.numpy.org/) libraries. Instructions are following:
 
 Windows
 
@@ -34,10 +34,18 @@ If you're running Ubuntu/Debian you may install packages from repository:
 2. ```sudo apt-get install python-numpy```
 3. ```sudo apt-get install python-matplotlib```
 
+OS X
+
+In order to get the whole package of python libraries updates (e.g. numpy is in OS X as a base though getting newer version is a safe play for backward compatibility issues) you may consider reading this guide:
+
+http://www.thisisthegreenroom.com/2011/installing-python-numpy-scipy-matplotlib-and-ipython-on-lion/
+
+Even though it's quite outdated and based on OS X 10.7 Lion this guide is still reliable up to Mavericks. Ruby and XCode Command Line Tools must be obtained beforehand, look for the latter in Mac App Store; ruby is preinstalled and may be outdated too. We won't use any virtualization here so installing virtualenv is necessary, also one may skip IPython.
+
 
 Other
 ---------
-There are two branches. Master branch contains excersices, Test branch is additional (and also temprary non-existant for case of laziness). In this one you can find some functions, which doesn't use in this course.
+There are two branches. Master branch contains excersices, Test branch is additional (and also temprary non-existant for sake of laziness). There you can find additional functions, which won't be used in this course.
 
 
 Pull request information
