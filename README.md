@@ -4,7 +4,7 @@ This repository contains all the demo source code required to perform labs. 5 la
 List of labs:
 --------------
 1. [Analog modulation (Amplitude modulation as an example)]
-2. Digital modulation
+2. [Digital modulation (Amplitude shift keying (ASK) as an example)]
 3. Coding
 4. Something else
 
@@ -45,5 +45,7 @@ Pull request information
 How to name the files:
 first_name_last_name_type_of_modulation.py
 
+You have to add source file into folder of your group
 
 [Analog modulation (Amplitude modulation as an example)]: https://github.com/dep403mai/Radiotech/tree/master/Lab1
+[Digital modulation (Amplitude shift keying (ASK) as an example)]: https://github.com/dep403mai/Radiotech/tree/master/Lab2
