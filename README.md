@@ -1,17 +1,16 @@
 Radiotech
 =========
-This repository contains all the demo source code required to perform labs. There are 5 demo labs.
+This repository contains all the demo source code required to perform labs. 5 labs are planned.
 List of labs:
 --------------
-1. [Analog modulation (Amplitude modulation is example)]
+1. [Analog modulation (Amplitude modulation as an example)]
 2. Digital modulation
 3. Coding
 4. Something else
 
 Requirements
 ------------
-To correct work require Matplotlib (http://matplotlib.org/) and Numpy (http://www.numpy.org/) libraries
-
+To correct work you have to download Matplotlib (http://matplotlib.org/) and Numpy (http://www.numpy.org/) libraries. Instructions are following:
 
 Windows
 
@@ -25,7 +24,7 @@ If you're running Windows x32 you have to install following packages:
 6. scipy-0.13.3.win32-py2.7 http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy
 7. six-1.5.2.win32-py2.7 http://www.lfd.uci.edu/~gohlke/pythonlibs/#six
 
-Other versions of these packages is avalible here: http://www.lfd.uci.edu/~gohlke/pythonlibs/
+Other versions of these packages is avalible here: http://www.lfd.uci.edu/~gohlke/pythonlibs/ (this site may be down sometimes)
 
 Linux
 
@@ -38,7 +37,13 @@ If you're running Ubuntu/Debian you may install packages from repository:
 
 Other
 ---------
-There are two brunches. Master brunch is main , Test brunch is additional. In this one you can find some functions, which doesn't use in this course.
+There are two branches. Master branch contains excersices, Test branch is additional (and also temprary non-existant for case of laziness). In this one you can find some functions, which doesn't use in this course.
+
+
+Pull request information
+---------
+How to name the files:
+first_name_last_name_type_of_modulation.py
 
 
 [Analog modulation (Amplitude modulation is example)]: https://github.com/dep403mai/Radiotech/tree/master/Lab1
