@@ -46,4 +46,4 @@ How to name the files:
 first_name_last_name_type_of_modulation.py
 
 
-[Analog modulation (Amplitude modulation is example)]: https://github.com/dep403mai/Radiotech/tree/master/Lab1
+[Analog modulation (Amplitude modulation as an example)]: https://github.com/dep403mai/Radiotech/tree/master/Lab1
