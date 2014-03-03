@@ -40,7 +40,7 @@ In order to get the whole package of python libraries updates (e.g. numpy is in 
 
 http://www.thisisthegreenroom.com/2011/installing-python-numpy-scipy-matplotlib-and-ipython-on-lion/
 
-Even though it's quite outdated and based on OS X 10.7 Lion this guide is still reliable up to Mavericks. Ruby and XCode Command Line Tools must be obtained beforehand, look for the latter in Mac App Store; ruby is preinstalled and may be outdated too. We won't use any virtualization here so installing virtualenv is necessary, also one may skip IPython.
+Even though it's quite outdated and based on OS X 10.7 Lion this guide is still reliable up to Mavericks. Ruby and XCode Command Line Tools must be obtained beforehand, look for the latter in Mac App Store; ruby is preinstalled and may be outdated too. We won't use any virtualization here so installing virtualenv isn`t necessary, also one may skip IPython.
 
 
 Other
