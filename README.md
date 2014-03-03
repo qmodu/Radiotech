@@ -36,7 +36,7 @@ If you're running Ubuntu/Debian you may install packages from repository:
 
 OS X
 
-In order to get the whole package of python libraries update (e.g. numpy is in OS X as a base though getting newer version is a safe play for backward compatibility issues) you may consider reading this guide:
+In order to get the whole package of python libraries updates (e.g. numpy is in OS X as a base though getting newer version is a safe play for backward compatibility issues) you may consider reading this guide:
 
 http://www.thisisthegreenroom.com/2011/installing-python-numpy-scipy-matplotlib-and-ipython-on-lion/
 
@@ -45,7 +45,7 @@ Even though it's quite outdated and based on OS X 10.7 Lion this guide is still 
 
 Other
 ---------
-There are two branches. Master branch contains excersices, Test branch is additional (and also temprary non-existant for sake of laziness). There one you can find additional functions, which won't be used in this course.
+There are two branches. Master branch contains excersices, Test branch is additional (and also temprary non-existant for sake of laziness). There you can find additional functions, which won't be used in this course.
 
 
 Pull request information
