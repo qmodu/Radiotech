@@ -6,43 +6,43 @@ from numpy import * #Для функции arange(), функция поддер
 
 ########## Входные данные ##############
 
-Tm=4 #Длительность сигнала
-Fd=6000.0 #Частота дискретизации
-FFTL=8192 #Количество линий спектра
+Fd=200.0 #Частота дискретизации аналогового несущего сигнала
+Fdd=500.0 #Частота дискретизации цифрового исходного сигнала
+Fc=20.0 #Частота несущей
+N=30 #Количество передающихся символов
+speed=10.0 #Символьная скорость (частота символов)
+duration=1/speed #Длительность импульса
+time_signal=N*duration #Длительность исходного сигнала из N импульсов
+M=3 #Количество уровней модуляции
 
-F2=20.0 #Частота несущей
+# Формируем исходную последовательность символов
+source_digital_sequence=[random.randint(0,M) for x in range(0,N)]
 
-speed=10.0 #Символьная скорость
-time=1/speed
+Wc=2*math.pi*Fc #Угловая частота несущей
 
+# Формируем список значений исходного сигнала
+source_digital_signal=[]
+for x in range(0,N):
+    source_digital_signal+=[source_digital_sequence[x] for y in arange(0,duration,(1.0/Fdd))]
 
-random.randint(0,2)
-print random.randint(0,1)
-source_digital_sequence=[random.randint(0,2) for x in range(0,50)]
-print source_digital_sequence
+# Формируем список значений модулированного сигнала
+ASK=[]
+for x in xrange(0,N):
+    ASK+=[source_digital_sequence[x]*math.sin(Wc*t) for t in arange(0,duration,(1.0/Fd))]
 
-w1=2*math.pi*F2 #Угловая частота несущей
-
-# Формируем список значений несущего сигнала сигнала, длительностью Tm, с шагом 1/Fd
-
-g=[]
-for x in xrange(0,50):
-    g+=[source_digital_sequence[x]*math.sin(w1*y) for y in arange(0,time,(1.0/Fd))]
-print len(arange(0,time,(1.0/Fd)))
 
 #################  Определение функции построения графиков  #####################
 
 def plot_signal(x,y,title,labelx,labley,position):
-    pylab.subplot (3, 1, position)
+    pylab.subplot (2, 1, position)
     pylab.plot(x,y)
     pylab.title(title)
     pylab.xlabel(labelx)
     pylab.ylabel(labley)
-    pylab.grid(True)           
+    pylab.grid(True)
 
-plot_signal(range(0,50),source_digital_sequence,'Digital secuence','time','',1)
-
-plot_signal(arange(0,50*time,(1.0/Fd)),g,'ASK','time','',3)
+plot_signal(arange(0,time_signal,(1.0/Fdd)),source_digital_signal,'Digital sequence','time','',1)
+plot_signal(arange(0,time_signal,(1.0/Fd)),ASK,'ASK','time','',2)
 
 #Отображение графиков
 pylab.show()
