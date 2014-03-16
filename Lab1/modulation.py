@@ -6,7 +6,7 @@ from numpy import * #Для функции arange(), функция поддер
 ########## Входные данные ##############
 
 Tm=4.0 #Длительность сигнала
-Fd=6000.0 #Частота дискретизации
+Fd=60000.0 #Частота дискретизации
 FFTL=8192 #Количество линий спектра
 F1=200.0 #Частота исходного сигнала
 F2=2000.0 #Частота несущей
@@ -44,16 +44,18 @@ def plot_signal(x,y,title,labelx,labley,position):
     pylab.ylabel(labley)
     pylab.grid(True)           
 
+#Для нормирования амплитудного спетра амплитуда делится на количество линий спектра FFTL
+
 #Построение исходного сигнала
 plot_signal(arange(0,(3/F1),(1.0/Fd)),S[0:(int(3*Fd/F1))],'Source signal','Time (s)','Amplitude',1)
 #Построение спектра исходного сигнала
-plot_signal(arange(0,((Fd/2)+(Fd/FFTL)),(Fd/FFTL)),abs(FFT_S)/len(arange(0,Tm/3,(1.0/Fd))),'Spectrum of source signal','Frequency (Hz)','Amplitude',3)
+plot_signal(arange(0,((Fd/2)+(Fd/FFTL)),(Fd/FFTL)),abs(FFT_S)/(FFTL),'Spectrum of source signal','Frequency (Hz)','Amplitude',3)
 #Построение АМ сигнала
 plot_signal(arange(0,(10/F1),(1.0/Fd)),AM[0:(int(10*Fd/F1))],'Amplitude modulation','Time (s)','Amplitude',5)
 #Построение спектра несущего сигнала
-plot_signal(arange(0,((Fd/2)+(Fd/FFTL)),(Fd/FFTL)),abs(FFT_M)/len(arange(0,Tm/3,(1.0/Fd))),'Spectrum of carrier signal','Frequency (Hz)','Amplitude',7)
+plot_signal(arange(0,((Fd/2)+(Fd/FFTL)),(Fd/FFTL)),abs(FFT_M)/(FFTL),'Spectrum of carrier signal','Frequency (Hz)','Amplitude',7)
 #Построение спектра АМ сигнала
-plot_signal(arange(0,((Fd/2)+(Fd/FFTL)),(Fd/FFTL)),abs(FFT_AM)/len(arange(0,Tm/3,(1.0/Fd))),'Spectrum of AM signal','Frequency (Hz)','Amplitude',9)
+plot_signal(arange(0,((Fd/2)+(Fd/FFTL)),(Fd/FFTL)),abs(FFT_AM)/(FFTL),'Spectrum of AM signal','Frequency (Hz)','Amplitude',9)
 
 #Отображение графиков
 pylab.show()
