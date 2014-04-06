@@ -5,7 +5,7 @@ List of labs:
 --------------
 1. [Analog modulation (Amplitude modulation as an example)]
 2. [Digital modulation (Amplitude shift keying (ASK) as an example)]
-3. Coding
+3. [Coding (Hamming code (7,4,3) as an example)]
 4. Something else
 
 Requirements
@@ -59,3 +59,5 @@ You have to add source file into folder of your group
 
 [Analog modulation (Amplitude modulation as an example)]: https://github.com/dep403mai/Radiotech/tree/master/Lab1
 [Digital modulation (Amplitude shift keying (ASK) as an example)]: https://github.com/dep403mai/Radiotech/tree/master/Lab2
+[Coding (Hamming code (7,4,3) as an example)]: https://github.com/dep403mai/Radiotech/tree/master/Lab3
+
